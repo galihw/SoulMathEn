@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+
+        <title>SoulMath</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link media="all" type="text/css" rel="stylesheet" href="indexEn.css">
+
+    </head>
+    <body>
+		<header>
+            <a href="https://wa.me/628986989406" target="_blank" >SoulMath - wa 62-898-6989-406</a>
+        </header>
+
+        <div class="container">
+            <div id="content">
+                <h1>Soul Math</h1>
+                Contains math problems for practice.<br>
+				Accompanied by an answer key.<br>
+				The numbers, images, answer choices, and answer key are randomized.<br>
+            </div>
+            <img src="logoEN.png" />
+        </div>
+
+        <footer>
+            <ul>
+                <li>
+                    <span>Question Generator</span>
+					Contains questions that can be selected as desired with a maximum of 20 questions.<br>
+					<td><button id="btnSD" class="model" onclick="FuncGenerator(1)">Elementary School Engine</button></td>
+					<br>
+					<td><button id="btnSMP" class="model" onclick="FuncGenerator(2)">Middle School Engine</button></td>
+                </li>
+                <li>
+                    <span>Collection of Questions</span>
+					Contains a collection of elementary and middle school questions in tab form for Grades 3, 4, 5, 6, 7, 8, and 9.<br>
+                    <td><button id="btnKumpulan" class="model" onclick="FuncKumpulan()">Tab-Chapter</button></td> 
+                </li>
+                <li>
+                    <span>Mix Questions</span>
+					Contains a collection of 20 questions that are randomly selected.<br>
+                    <td><button id="btnRandom1" class="model" onclick="FuncRandom(1)">Elementary School Mix</button></td>
+					<br>
+                    <td><button id="btnRandom2" class="model" onclick="FuncRandom(2)">Middle School Mix</button></td>
+                </li>
+
+                <li> <!-- Ulangi lagi tiga kali sehingga sekarang kita punya 6 list -->
+                <li> <!-- Ulangi lagi tiga kali sehingga sekarang kita punya 6 list -->
+                <li> <!-- Ulangi lagi tiga kali sehingga sekarang kita punya 6 list -->
+            </ul>
+        </footer>
+		<script>
+			function FuncGenerator(no){
+				if(no==1)	window.parent.location.href="MathQuestionGeneratorES.html";
+				else 		window.parent.location.href="MathQuestionGeneratorMS.html";
+			}
+			function FuncKumpulan(){
+				window.parent.location.href="About.html";
+			}
+			function FuncRandom(no){
+				if(no==1)	window.parent.location.href="MathRandomQuestionES.html";
+				else		window.parent.location.href="MathRandomQuestionMS.html";
+			}
+		</script>
+    </body>
+</html>
