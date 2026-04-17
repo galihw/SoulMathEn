@@ -45,6 +45,13 @@
 					<br>
                     <td><button id="btnRandom2" class="model" onclick="FuncRandom(2)">Middle School Mix</button></td>
                 </li>
+                <li>
+                    <span>Package</span>
+					Contains a collection of Class-Chapter Package questions with many questions according to the data.<br>
+                    <td><button id="btnPaket1" class="model" onclick="FuncPaket(1)">Elementary School Package</button></td>
+					<br>
+                    <td><button id="btnPaket2" class="model" onclick="FuncPaket(2)">Middle School Package</button></td>
+                </li>
 
                 <li> <!-- Ulangi lagi tiga kali sehingga sekarang kita punya 6 list -->
                 <li> <!-- Ulangi lagi tiga kali sehingga sekarang kita punya 6 list -->
@@ -62,6 +69,10 @@
 			function FuncRandom(no){
 				if(no==1)	window.parent.location.href="MathRandomQuestionES.html";
 				else		window.parent.location.href="MathRandomQuestionMS.html";
+			}
+			function FuncPaket(no){
+				if(no==1)	window.parent.location.href="PackageES.html";
+				else		window.parent.location.href="PackageMS.html";
 			}
 			function Contact(){
 				window.parent.location.href="https://wa.me/628986989406";
